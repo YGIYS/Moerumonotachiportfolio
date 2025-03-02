@@ -35,7 +35,7 @@ const Hero = () => {
               isDarkMode
                 ? `btn brightness-100 btn-ghost text-2xl font-bold border-lime-100 border-2 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#87ceeb,0_0_15px_#87ceeb,0_0_30px_#87ceeb]"
  text-transparent bg-clip-text bg-white bg-gradient-to-r from-white rounded-xl px-3 p-1 z-50  to-blue-400 hover:brightness-100 hover:bg-blue-700  outline-none outline-blue-700 [text-stroke:2px_#ff0] `
-                : ` btn brightness-100 btn-ghost text-2xl font-bold border-lime-400 border-2 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#87ceeb,0_0_15px_#87ceeb,0_0_30px_#87ceeb]
+                : ` btn brightness-100 btn-ghost text-2xl font-bold border-amber-200 border-2 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#87ceeb,0_0_15px_#87ceeb,0_0_30px_#87ceeb]
  text-transparent bg-clip-text bg-gradient-to-r from-black rounded-xl p-1 z-50 px-3  to-blue-500 hover:brightness-200  outline-none outline-blue-700 [text-stroke:2px_#ff0]"  `
             }    absolute top-5  bg-white/80 backdrop-blur-md shadow-lg z-50 
 `}
@@ -54,7 +54,7 @@ const Hero = () => {
             className={`absolute top-0 left-0 h-10 w-10 fill-current transition-all duration-500 ease-in-out transform ${
               isDarkMode
                 ? "opacity-0 scale-0"
-                : "opacity-100 scale-100 fill-amber-400 text-amber-400 "
+                : "opacity-100 scale-100 fill-amber-400 text-blue-400 "
             }`}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -76,6 +76,11 @@ const Hero = () => {
           </svg>
         </div>
       </div>
+
+      {/* side menu */}
+
+
+      {/* sidemenu botm */}
 
       <div>
         <Spotlight
@@ -99,7 +104,7 @@ const Hero = () => {
       {/* light */}
       <div
         className="h-screen w-full dark:bg-black mt-3 
-       bg-white  dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.3]  flex items-center justify-center absolute top-0 left-0"
+       bg-white    bg-grid-small-blue-400  flex items-center justify-center absolute top-0 left-0"
       >
         {/* Radial gradient for the container to give a faded look */}
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
@@ -161,7 +166,7 @@ const Hero = () => {
             </div>
           </div>
           {/* button */}
-          <button className=" text-nowrap inline-flex h-12 animate-shimmer items-center justify-center rounded-xl border w-40 mx-auto mt-5  border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-5 font-medium text-blue-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+          <button className=" text-nowrap inline-flex h-12 animate-shimmer items-center justify-center rounded-xl border w-40 mx-auto mt-5  border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-5 font-medium text-blue-500 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
             Projs preview 📁
           </button>
         </div>
