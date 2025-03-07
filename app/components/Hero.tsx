@@ -35,7 +35,7 @@ const Hero = () => {
               isDarkMode
                 ? `btn brightness-100 btn-ghost text-2xl font-bold border-lime-100 border-2 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#87ceeb,0_0_15px_#87ceeb,0_0_30px_#87ceeb]"
  text-transparent bg-clip-text bg-white bg-gradient-to-r from-white rounded-xl px-3 p-1 z-50  to-blue-400 hover:brightness-100 hover:bg-blue-700  outline-none outline-blue-700 [text-stroke:2px_#ff0] `
-                : ` btn brightness-100 btn-ghost text-2xl font-bold border-amber-200 border-2 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#87ceeb,0_0_15px_#87ceeb,0_0_30px_#87ceeb]
+                : ` btn brightness-100 btn-ghost text-2xl font-bold border-blue-200 border-2 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#87ceeb,0_0_15px_#87ceeb,0_0_30px_#87ceeb]
  text-transparent bg-clip-text bg-gradient-to-r from-black rounded-xl p-1 z-50 px-3  to-blue-500 hover:brightness-200  outline-none outline-blue-700 [text-stroke:2px_#ff0]"  `
             }    absolute top-5  bg-white/80 backdrop-blur-md shadow-lg z-50 
 `}

@@ -1,9 +1,12 @@
 import React from 'react'
 
-import {BentoGrid , BentoGridItem} from '../../app/components/ui/BentoGrid'
-import { cn } from '../lib/utils';
+import { BentoGrid, BentoGridItem } from "../../app/components/ui/BentoGrid";
+
+import { cn } from "../lib/utils";
 
 
+
+const TechStak = () => {
 const gridItems = [
   {
     src: "/b1.svg",
@@ -64,26 +67,27 @@ const gridItems = [
   },
 ];
 
-console.log(gridItems); // Check if data is correct
-
-export default function CustomBentoGrid() {
   return (
-    <div className="flex flex-col md:grid md:grid-cols-3 gap-4 rounded-xl p-10">
-      {gridItems.map((item, index) => (
-        <div key={index} className={`${item.gridClassName}`}>
-          <div className="relative">
-            <img
-              src={item.src}
-              alt={item.alt}
-              className="w-full h-[30rem]  object-cover object-right-top rounded-2xl"
-            />
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-slate-400 p-4">
-              <h2 className={` text-end ${item.titleStyle}`}>{item.title}</h2>
-              <p className="text-center">{item.description}</p>
+    <div>
+      <div className="flex flex-col md:grid md:grid-cols-3 gap-4 rounded-xl p-4">
+        {gridItems.map((item, index) => (
+          <div key={index} className={`${item.gridClassName}`}>
+            <div className="relative">
+              <img
+                src={item.src}
+                alt={item.alt}
+                className="w-full h-[30rem]  object-cover object-right-top rounded-2xl"
+              />
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-slate-400 p-4">
+                <h2 className={` text-end ${item.titleStyle}`}>{item.title}</h2>
+                <p className="text-center">{item.description}</p>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }
+
+export default TechStak

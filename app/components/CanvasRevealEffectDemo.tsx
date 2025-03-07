@@ -4,17 +4,23 @@ import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 
+import Fase1 from "./aproach/Fase1";
+import Fase2 from "./aproach/Fase2";
+import Fase3 from "./aproach/Fase3";
+
+
+
 export function CanvasRevealEffectDemo() {
   return (
     <>
       <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-black w-full gap-4 mx-auto px-8">
-        <Card title="Sheetal is Nisha" icon={<AceternityIcon />}>
+        <Card title="Sheetal is Nisha" icon={<Fase1 />}>
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-emerald-900"
           />
         </Card>
-        <Card title="Nisha is Munni" icon={<AceternityIcon />}>
+        <Card title="Nisha is Munni" icon={<Fase2 />}>
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-black"
@@ -27,7 +33,7 @@ export function CanvasRevealEffectDemo() {
           {/* Radial gradient for the cute fade */}
           <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
         </Card>
-        <Card title="Munni is Aditi" icon={<AceternityIcon />}>
+        <Card title="Munni is Aditi" icon={<Fase3 />}>
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600"
