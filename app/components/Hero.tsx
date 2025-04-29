@@ -1,14 +1,15 @@
 "use client"
-import React, { useState, useEffect } from "react";
+import React, {  useEffect } from "react";
 import Link from "next/link";
 import { useTheme } from "../ThemeContext";
 import { Spotlight } from './ui/Spotlight';
 
 import Image from 'next/image';
-import { WavyBackground } from "./ui/WavyBackground";
+
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import "@/app/globals.css"
 import hero from "@/app/asset/hero.png"
+import MobileNavBae from "./MobileNavBae";
 
 
 const Hero = () => {
@@ -17,6 +18,12 @@ const Hero = () => {
    useEffect(() => {
      document.body.className = isDarkMode ? "dark" : "light";
    }, [isDarkMode]);
+  
+ 
+ 
+ 
+ 
+ 
 
  
    
@@ -34,24 +41,27 @@ const Hero = () => {
             className={`${
               isDarkMode
                 ? `btn brightness-100 btn-ghost text-2xl font-bold border-lime-100 border-2 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#87ceeb,0_0_15px_#87ceeb,0_0_30px_#87ceeb]"
- text-transparent bg-clip-text bg-white bg-gradient-to-r from-white rounded-xl px-3 p-1 z-50  to-blue-400 hover:brightness-100 hover:bg-blue-700  outline-none outline-blue-700 [text-stroke:2px_#ff0] `
-                : ` btn brightness-100 btn-ghost text-2xl font-bold border-blue-200 border-2 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#87ceeb,0_0_15px_#87ceeb,0_0_30px_#87ceeb]
- text-transparent bg-clip-text bg-gradient-to-r from-black rounded-xl p-1 z-50 px-3  to-blue-500 hover:brightness-200  outline-none outline-blue-700 [text-stroke:2px_#ff0]"  `
-            }    absolute top-5  bg-white/80 backdrop-blur-md shadow-lg z-50 
+ text-transparent bg-clip-text bg-white bg-gradient-to-r from-white rounded-xl   z-50  to-blue-400 hover:brightness-100 hover:bg-blue-700  outline-none outline-blue-700 [text-stroke:2px_#ff0] nav-link`
+                : ` btn brightness-100 btn-ghost text-2xl sm:text-base md:text-xl font-bold border-blue-200 border-2 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#87ceeb,0_0_15px_#87ceeb,0_0_30px_#87ceeb]
+ text-transparent bg-clip-text bg-gradient-to-r from-black rounded-xl  z-50   to-blue-500 hover:brightness-200  outline-none outline-blue-700 [text-stroke:2px_#ff0]" nav-link `
+            }    absolute top-5  bg-white/80 backdrop-blur-md shadow-lg  nav-link
 `}
             onClick={() => {}}
           >
             MoeruMonoTachi
           </Link>
         </li>
+
+        <MobileNavBae />
         {/* themethoggle */}
         <div
-          className="cursor-pointer absolute h-10 w-10 flex top-5 z-20 right-24 md:right-4 sm:-right-1"
+          className="cursor-pointer absolute   flex top-5 z-20 right-24 md:right-4 sm:-right-1 nav-theme-icon
+"
           onClick={toggleTheme}
         >
           {/* Sun icon */}
           <svg
-            className={`absolute top-0 left-0 h-10 w-10 fill-current transition-all duration-500 ease-in-out transform ${
+            className={`absolute h-10 w-10 nav-theme-icon  fill-current transition-all duration-500 ease-in-out transform ${
               isDarkMode
                 ? "opacity-0 scale-0"
                 : "opacity-100 scale-100 fill-amber-400 text-blue-400 "
@@ -64,7 +74,7 @@ const Hero = () => {
 
           {/* Moon icon */}
           <svg
-            className={`absolute top-0 left-0 h-10 w-10 fill-current transition-all duration-500 ease-in-out transform ${
+            className={` nav-theme-icon absolute h-10 w-10 sm:w-4 sm:h-5  md:h-10 md:w-10 lg:h-10 lg:w-10 fill-current transition-all duration-500 ease-in-out transform ${
               isDarkMode
                 ? "opacity-100 scale-100 fill-white"
                 : "opacity-0 scale-0"
@@ -78,7 +88,6 @@ const Hero = () => {
       </div>
 
       {/* side menu */}
-
 
       {/* sidemenu botm */}
 
@@ -114,12 +123,12 @@ const Hero = () => {
         <div className=" max-w-[89vw] md:max-w-2xl lg:max-w-[70vw]  flex flex-col text-center  justify-center ">
           <p
             className={`${
-              isDarkMode ? "text-blue-700" : "text-blue-700"
+              isDarkMode ? "text-blue-800" : "text-blue-800"
             } text-center -mb-8  font-mono font-medium tracking-wider`}
           >
             Dynamic digital web magic with MoeruMonoTachi
             <span
-              className={`${isDarkMode ? "text-blue-700" : "text-blue-700"}`}
+              className={`${isDarkMode ? "text-blue-700" : "text-blue-800"}`}
             >
               Tech
             </span>
@@ -128,7 +137,7 @@ const Hero = () => {
           <TextGenerateEffect
             className={`${
               isDarkMode ? "text-slate-100" : "text-black"
-            }  z-10 text-[40px]   md:text-5xl text-center lg:text-5xl mb-2`}
+            }  z-10 Hero-centertext   text-center  mb-2`}
             words="  Crafting Innovative Digital Solutions "
           />
 
@@ -138,13 +147,13 @@ const Hero = () => {
             }  z-10 -mt-4  text-sm sm:text-base text-center pt-2 pb-4  `}
           >
             <span
-              className={`${isDarkMode ? "text-blue-700" : "text-blue-700"}`}
+              className={`${isDarkMode ? "text-blue-800" : "text-blue-900"}`}
             >
               Hi
             </span>{" "}
             I'm Richman, a software developer based in{" "}
             <span
-              className={`${isDarkMode ? "text-blue-700" : "text-blue-700"}`}
+              className={`${isDarkMode ? "text-blue-900" : "text-blue-900"}`}
             >
               Nigeria.
             </span>
@@ -154,14 +163,14 @@ const Hero = () => {
             <div
               className={`${
                 isDarkMode ? "bg-blue-500" : " bg-blue-500"
-              }  rounded-full overflow-hidden w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64`}
+              }  rounded-full overflow-hidden w-32 imag h-32 sm:w-48 sm:h-48 md:w-64 md:h-64`}
             >
               <Image
                 src={hero}
                 height={70} // Adjusted for mobile
                 width={70} // Adjusted for mobile
                 alt="Heroimg"
-                className="object-contain w-full h-full" // Ensures the image covers the circle
+                className="object-contain w-full h-full " // Ensures the image covers the circle
               />
             </div>
           </div>

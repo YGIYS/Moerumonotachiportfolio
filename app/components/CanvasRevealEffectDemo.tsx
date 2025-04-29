@@ -7,20 +7,51 @@ import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 import Fase1 from "./aproach/Fase1";
 import Fase2 from "./aproach/Fase2";
 import Fase3 from "./aproach/Fase3";
-
+import Fase4 from "./aproach/Fase4";
 
 
 export function CanvasRevealEffectDemo() {
   return (
     <>
       <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-black w-full gap-4 mx-auto px-8">
-        <Card title="Sheetal is Nisha" icon={<Fase1 />}>
+        <Card
+          titleheader="
+            Plan and Architect the Project."
+          title="
+          
+          Define the purpose and main features (what problem it solves).
+
+Plan the architecture: How the frontend, backend, database, and APIs will interact.
+
+Create wireframes or mockups for the user interface (UI).
+
+Decide on technology stacks (e.g., React + Node.js + PostgreSQL).
+
+Good planning saves massive time later."
+          icon={<Fase1 />}
+        >
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-emerald-900"
           />
         </Card>
-        <Card title="Nisha is Munni" icon={<Fase2 />}>
+
+        <Card
+          titleheader="
+              Structure and Implement Code Systematically"
+          title="
+
+Set up a modular codebase (separate concerns clearly: components, services, utilities).
+
+Follow best practices: clean code, reusable functions, meaningful naming.
+
+Implement core features first (e.g., authentication, basic CRUD operations).
+
+Always work in small, testable steps (don't try to build everything at once).
+
+Think simple and extendable over fast and messy."
+          icon={<Fase2 />}
+        >
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-black"
@@ -33,7 +64,41 @@ export function CanvasRevealEffectDemo() {
           {/* Radial gradient for the cute fade */}
           <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
         </Card>
-        <Card title="Munni is Aditi" icon={<Fase3 />}>
+        <Card
+          titleheader="
+             Test, Debug, and Optimize"
+          title="Regularly test functionality (unit tests, integration tests, manual testing).
+
+Debug efficiently (console logs early, use dev tools, create error boundaries).
+
+Optimize performance: loading speed, database queries, image sizes, lazy loading.
+
+Prepare for scaling: make sure the app can grow without breaking.
+
+Launch small, polish constantly, scale wisely."
+          icon={<Fase3 />}
+        >
+          <CanvasRevealEffect
+            animationSpeed={3}
+            containerClassName="bg-sky-600"
+            colors={[[125, 211, 252]]}
+          />
+        </Card>
+
+        <Card
+          titleheader="
+            Plan and Architect the Project."
+          title="Regularly test functionality (unit tests, integration tests, manual testing).
+
+Debug efficiently (console logs early, use dev tools, create error boundaries).
+
+Optimize performance: loading speed, database queries, image sizes, lazy loading.
+
+Prepare for scaling: make sure the app can grow without breaking.
+
+Launch small, polish constantly, scale wisely."
+          icon={<Fase4 />}
+        >
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600"
@@ -49,8 +114,10 @@ const Card = ({
   title,
   icon,
   children,
+  titleheader,
 }: {
-  title: string;
+    title: string;
+  titleheader?: string;
   icon: React.ReactNode;
   children?: React.ReactNode;
 }) => {
@@ -82,7 +149,9 @@ const Card = ({
         <div className="text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full  mx-auto flex items-center justify-center">
           {icon}
         </div>
-        <h2 className="dark:text-white text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+        <h1 className="dark:text-white  opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4 text-3xl font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+          {titleheader} </h1>
+        <h2 className="dark:text-white text-sm opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
           {title}
         </h2>
       </div>

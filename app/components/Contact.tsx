@@ -9,7 +9,7 @@ const Contact = () => {
 
     
   return (
-    <div
+    <section id="Contact"
       className={`pt-10 pb-14 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 w-[90%] sm:w-[80%] mx-auto items-center gap-10 mt-10 `}
     >
       <div >
@@ -18,7 +18,7 @@ const Contact = () => {
       <div>
         <ContactInfo />
       </div>
-    </div>
+    </section>
   );
 }
 

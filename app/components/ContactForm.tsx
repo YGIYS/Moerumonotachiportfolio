@@ -38,7 +38,7 @@ const ContactForm = () => {
       <div
         className={`${
           isDarkMode ? "bg-slate-950 " : "bg-slate-100  "
-        } flex flex-col items-center rounded-xl p-7`}
+        } flex flex-col items-center rounded-xl p-7 `}
       >
         <div
           className={`${
@@ -54,7 +54,7 @@ const ContactForm = () => {
           onSubmit={handleSubmit(onSubmit)}
           className="mt-9 block w-full overflow-hidden"
         >
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:w-full sm:w-auto">
             <input
               type="text"
               placeholder="First Name"
@@ -63,7 +63,7 @@ const ContactForm = () => {
                 isDarkMode
                   ? "bg-black border-blue-500 text-white"
                   : "bg-slate-100 border-amber-500 text-slate-700"
-              } flex-2 px-7 py-3 rounded-xl border-[1.5px] border-opacity-55 outline-none w-full`}
+              } flex-2 px-7 py-3 rounded-xl border-[1.5px] border-opacity-55 outline-none w-full `}
             />
             {errors.firstName && (
               <p className="text-red-500">{errors.firstName.message}</p>
@@ -84,7 +84,7 @@ const ContactForm = () => {
             )}
           </div>
 
-          <div className="mt-5 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="mt-5 flex flex-col md:flex-row items-center justify-between gap-4 md:w-full sm:w-auto">
             <input
               type="email"
               placeholder="Email Address"
@@ -99,7 +99,7 @@ const ContactForm = () => {
                 isDarkMode
                   ? "bg-black border-blue-500 text-white"
                   : "bg-slate-100 border-amber-500 text-slate-700"
-              } flex-1 px-7 py-3 rounded-xl border-[1.5px] border-opacity-55 outline-none w-full`}
+              } flex-1 px-7 py-3 rounded-xl border-[1.5px] border-opacity-55 outline-none w-full md:w-full sm:w-auto`}
             />
             {errors.email && (
               <p className="text-red-500">{errors.email.message}</p>
