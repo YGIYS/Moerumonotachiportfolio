@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 import { useTheme } from "@/app/ThemeContext";
 const Fase4 = () => {
-    const { isDarkMode } = useTheme()
+  const { isDarkMode } = useTheme();
   return (
     <div>
       <h1
@@ -13,6 +13,6 @@ const Fase4 = () => {
       </h1>
     </div>
   );
-}
+};
 
-export default Fase4
+export default Fase4;

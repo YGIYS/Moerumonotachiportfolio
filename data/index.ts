@@ -208,4 +208,3 @@ export const socialMedia = [
     img: "/link.svg",
   },
 ];
- 

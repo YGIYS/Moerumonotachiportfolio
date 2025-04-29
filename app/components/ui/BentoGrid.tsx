@@ -1,5 +1,5 @@
 import { cn } from "@/app/lib/utils";
-import { img } from "motion/react-client";
+// import { img } from "motion/react-client";
 import { img } from "motion/react-m";
 import { BackgroundGradientAnimation } from "./GradientBg";
 
@@ -14,7 +14,7 @@ export const BentoGrid = ({
     <div
       className={cn(
         "grid md:auto-rows-[10rem] grid-cols-1 lg:grid-cols-4 gap-4  md:grid-cols-5 max-w-7xl mx-auto ",
-        className
+        className,
       )}
     >
       {children}
@@ -47,13 +47,13 @@ export const BentoGridItem = ({
   colSpan?: number;
   children?: React.ReactNode;
   gridClassName?: string;
-    descriptionClassName?: string;
+  descriptionClassName?: string;
 }) => {
   return (
     <div
       className={cn(
         " rounded-3xl  row-span-1 flex flex-col  group/bento  hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-blue-700/40 bg-blue-50 justify-between  space-y-1 border-2 border-black-100",
-        className
+        className,
       )}
     >
       <div className={`${id === 5} && 'flex justify-center h-full`}>
@@ -90,7 +90,7 @@ export const BentoGridItem = ({
         <div
           className={cn(
             titleClassName,
-            "gradient group-hover/bento:translate-x-2 transition duration-200 relative md:h-full flex flex-col px-5 p-5 lg:p-10"
+            "gradient group-hover/bento:translate-x-2 transition duration-200 relative md:h-full flex flex-col px-5 p-5 lg:p-10",
           )}
         />
         <div className="font-sans font-normal text-neutral-700 text-sm md:text:xs lg:text-base dark:text-neutral-300">

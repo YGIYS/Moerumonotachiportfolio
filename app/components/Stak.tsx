@@ -23,12 +23,12 @@ const itemVariants = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
 };
 
-const Stak = () =>{
+const Stak = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false, amount: 0.2 }); // Triggers animation when 20% of the grid is visible
 
-  const { isDarkMode } = useTheme()
-  
+  const { isDarkMode } = useTheme();
+
   return (
     <>
       <section id="TechStak">
@@ -71,7 +71,7 @@ const Stak = () =>{
       </section>
     </>
   );
-}
+};
 
 {
   /* <div>

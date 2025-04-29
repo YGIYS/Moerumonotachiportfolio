@@ -4,18 +4,17 @@ import Link from "next/link";
 import { useTheme } from "../ThemeContext";
 
 const Footer = () => {
-  const {isDarkMode
-} = useTheme();
+  const { isDarkMode } = useTheme();
 
   return (
     <footer
       className={`${
         isDarkMode ? "bg-slate-950 text-white" : " bg-slate-950 text-slate-500"
-      } p-10 mx-0 flex flex-row justify-between m-0 footer-section`}
+      } p-10 mx-0 flex flex-row justify-between footer-section`}
     >
       <div className="">
         <div className=" flex align-middle justify-center ">
-          <div className=" foter-logo  pb-7 flex align-middle justify-center lg:gap-40 md:gap-10 sm:gap-10">
+          <div className=" foter-logo  pb-7 flex align-middle justify-center ">
             <a href="https://twitter.com">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +66,7 @@ const Footer = () => {
       </div>
 
       <div>
-        <p className="text-xs pt- pb-0">
+        <p className="text-xs mb-[-5px] mt-2">
           Copyright © {new Date().getFullYear()} - All rights reserved
         </p>
       </div>

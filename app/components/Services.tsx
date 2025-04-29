@@ -1,44 +1,41 @@
-"use client"
-import React from 'react'
-import { useTheme } from '../ThemeContext';
+"use client";
+import React from "react";
+import { useTheme } from "../ThemeContext";
 
- const services = [
-   {
-     id: "01",
-     title: "Web Design",
-     description:
-       "Crafting visually stunning and user-friendly websites tailored to your taste",
-   },
-   {
-     id: "02",
-     title: "SEO Optimization",
-     description:
-       " Enhancing your website's visibility and ranking on search engines",
-   },
-   {
-     id: "03",
-     title: "UX/UI Design",
-     description:
-       "Creating intuitive and engaging user experiences and interfaces",
-   },
-   {
-     id: "04",
-     title: "Digital Marketing",
-     description:
-       " Strategizing and executing comprehensive digital marketing ",
-   },
-   {
-     id: "05",
-     title: "AI content integration",
-     description:
-       "Crafting and engaging relevant content , including blogs, videos ,",
-   },
- ];
+const services = [
+  {
+    id: "01",
+    title: "Web Design",
+    description:
+      "Crafting visually stunning and user-friendly websites tailored to your taste",
+  },
+  {
+    id: "02",
+    title: "SEO Optimization",
+    description:
+      " Enhancing your website's visibility and ranking on search engines",
+  },
+  {
+    id: "03",
+    title: "UX/UI Design",
+    description:
+      "Creating intuitive and engaging user experiences and interfaces",
+  },
+  {
+    id: "04",
+    title: "Digital Marketing",
+    description: " Strategizing and executing comprehensive digital marketing ",
+  },
+  {
+    id: "05",
+    title: "AI content integration",
+    description:
+      "Crafting and engaging relevant content , including blogs, videos ,",
+  },
+];
 const Services = () => {
+  const { isDarkMode } = useTheme();
 
-   const {isDarkMode} = useTheme()
-   
-   
   return (
     <section
       id="Services"
@@ -83,6 +80,6 @@ const Services = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Services
+export default Services;

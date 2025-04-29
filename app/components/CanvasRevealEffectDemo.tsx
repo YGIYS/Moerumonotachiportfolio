@@ -2,13 +2,12 @@
 import React from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
+import { CanvasRevealEffect } from "@/app/components/ui/CanvasRevealEffect";
 
 import Fase1 from "./aproach/Fase1";
 import Fase2 from "./aproach/Fase2";
 import Fase3 from "./aproach/Fase3";
 import Fase4 from "./aproach/Fase4";
-
 
 export function CanvasRevealEffectDemo() {
   return (
@@ -116,7 +115,7 @@ const Card = ({
   children,
   titleheader,
 }: {
-    title: string;
+  title: string;
   titleheader?: string;
   icon: React.ReactNode;
   children?: React.ReactNode;
@@ -150,7 +149,8 @@ const Card = ({
           {icon}
         </div>
         <h1 className="dark:text-white  opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4 text-3xl font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
-          {titleheader} </h1>
+          {titleheader}{" "}
+        </h1>
         <h2 className="dark:text-white text-sm opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
           {title}
         </h2>

@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useTheme } from "../ThemeContext";
 import { navItems } from "@/data";
-import { useCallback } from "react";
+
 const MobileNavBar = () => {
   const { isDarkMode } = useTheme();
   const [nav, setNav] = useState(false);
@@ -12,22 +12,12 @@ const MobileNavBar = () => {
   const toggleNav = () => {
     setNav(!nav);
     if (nav) {
-   return   closeNav()
+      return closeNav();
     }
   };
-   const [activeSection, setActiveSection] = useState("Home");
+ 
 
-   const scrollToSection = useCallback(
-     (sectionId) => {
-       const section = document.getElementById(sectionId);
-       if (section) {
-         section.scrollIntoView({
-           behavior: "smooth",
-         });
-       }
-     },
-     [activeSection] // Dependency array
-   );
+
 
   const closeNav = () => {
     setNav(false);
@@ -42,10 +32,7 @@ const MobileNavBar = () => {
         } absolute  top-[1.5rem] right-5 md:hidden border-[1px] rounded-xl `}
       >
         {nav ? (
-          <AiOutlineClose
-            className="p-2 fill-blue-500"
-            size={35}
-          />
+          <AiOutlineClose className="p-2 fill-blue-500" size={35} />
         ) : (
           <AiOutlineMenu className="p-2 fill-blue-500" size={35} />
         )}
@@ -66,9 +53,7 @@ const MobileNavBar = () => {
           {navItems.map((navItem, index) => (
             <li
               key={index}
-              onClick={() => {
-                scrollToSection(index);
-              }}
+             
             >
               <Link
                 href={navItem.link}

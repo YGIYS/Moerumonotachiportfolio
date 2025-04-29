@@ -1,12 +1,11 @@
-import React from 'react'
-import { FaPhone } from 'react-icons/fa'
-import { FaLocationPin} from 'react-icons/fa6'
-import { FaVoicemail } from 'react-icons/fa6'
+import React from "react";
+import { FaPhone } from "react-icons/fa";
+import { FaLocationPin } from "react-icons/fa6";
+import { FaVoicemail } from "react-icons/fa6";
 
-import { useTheme } from '../ThemeContext'
+import { useTheme } from "../ThemeContext";
 const ContactInfo = () => {
-const {isDarkMode} = useTheme()
-
+  const { isDarkMode } = useTheme();
 
   return (
     <div>
@@ -104,6 +103,6 @@ const {isDarkMode} = useTheme()
       </div>
     </div>
   );
-}
+};
 
-export default ContactInfo
+export default ContactInfo;

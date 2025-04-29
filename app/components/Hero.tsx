@@ -1,32 +1,22 @@
-"use client"
-import React, {  useEffect } from "react";
+"use client";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import { useTheme } from "../ThemeContext";
-import { Spotlight } from './ui/Spotlight';
+import { Spotlight } from "./ui/Spotlight";
 
-import Image from 'next/image';
+import Image from "next/image";
 
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import "@/app/globals.css"
-import hero from "@/app/asset/hero.png"
+import "@/app/globals.css";
+import hero from "@/app/asset/hero.png";
 import MobileNavBae from "./MobileNavBae";
-
 
 const Hero = () => {
   const { isDarkMode, toggleTheme } = useTheme();
- 
-   useEffect(() => {
-     document.body.className = isDarkMode ? "dark" : "light";
-   }, [isDarkMode]);
-  
- 
- 
- 
- 
- 
 
- 
-   
+  useEffect(() => {
+    document.body.className = isDarkMode ? "dark" : "light";
+  }, [isDarkMode]);
 
   return (
     <div className="pb-20 pt-14 relative">
@@ -182,6 +172,6 @@ const Hero = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Hero
+export default Hero;

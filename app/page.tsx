@@ -4,7 +4,7 @@ import { navItems } from "@/data";
 import Grid from "./components/Grid";
 import Services from "./components/Services";
 
-  import Contact from "./components/Contact";
+import Contact from "./components/Contact";
 import MiApproach from "./components/MiApproach";
 import Proj from "./components/Proj";
 import Stak from "./components/Stak";

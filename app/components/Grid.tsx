@@ -1,8 +1,7 @@
-import React from 'react'
+import React from "react";
 
-import {BentoGrid , BentoGridItem} from '../../app/components/ui/BentoGrid'
-import { cn } from '../lib/utils';
-
+import { BentoGrid, BentoGridItem } from "../../app/components/ui/BentoGrid";
+import { cn } from "../lib/utils";
 
 const gridItems = [
   {

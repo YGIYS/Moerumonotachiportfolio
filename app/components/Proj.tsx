@@ -1,12 +1,11 @@
-"use client"
-import React from 'react'
-import { ThreeDCardDemo } from './ThreeDCardDemo'
+"use client";
+import React from "react";
+import { ThreeDCardDemo } from "./ThreeDCardDemo";
 
-import { useTheme } from '../ThemeContext'
-  
-  
+import { useTheme } from "../ThemeContext";
+
 const Proj = () => {
-  const {isDarkMode} = useTheme()
+  const { isDarkMode } = useTheme();
   return (
     <div
       className={`${
@@ -24,6 +23,6 @@ const Proj = () => {
       <ThreeDCardDemo />
     </div>
   );
-}
+};
 
-export default Proj
+export default Proj;

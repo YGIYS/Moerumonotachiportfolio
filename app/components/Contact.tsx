@@ -1,18 +1,17 @@
-"use client"
+"use client";
 
-import React from 'react'
+import React from "react";
 
-import ContactForm from './ContactForm'
-import ContactInfo from './ContactInfo'
+import ContactForm from "./ContactForm";
+import ContactInfo from "./ContactInfo";
 
 const Contact = () => {
-
-    
   return (
-    <section id="Contact"
+    <section
+      id="Contact"
       className={`pt-10 pb-14 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 w-[90%] sm:w-[80%] mx-auto items-center gap-10 mt-10 `}
     >
-      <div >
+      <div>
         <ContactForm />
       </div>
       <div>
@@ -20,6 +19,6 @@ const Contact = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Contact
+export default Contact;

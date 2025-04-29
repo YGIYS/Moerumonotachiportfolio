@@ -1,71 +1,70 @@
-import React from 'react'
+import React from "react";
 
 import { BentoGrid, BentoGridItem } from "../../app/components/ui/BentoGrid";
 
 import { cn } from "../lib/utils";
 
-
-
 const TechStak = () => {
-const gridItems = [
-  {
-    src: "/b1.svg",
-    alt: "Image 1",
-    title: "I prioritize client collaboration, fostering open communication",
-    description: "Unleash your creativity with our design tools.",
+  const gridItems = [
+    {
+      src: "/b1.svg",
+      alt: "Image 1",
+      title: "I prioritize client collaboration, fostering open communication",
+      description: "Unleash your creativity with our design tools.",
 
-    titleStyle: "text-blue-500 font-bold text-3xl right-48 top-72",
-    gridClassName: "col-span-5 row-span-2 rounded-xl border-2 border-blue-500 ",
-    descriptionClassName: " right-48 top-72 mt-10 text-center ml-22 ",
-  },
-  {
-    src: "/grid_pic3.jpg",
-    alt: "Image 2",
-    title: "Innovative Solutions",
-    description: "Solve problems with cutting-edge technology.",
+      titleStyle: "text-blue-500 font-bold text-3xl right-48 top-72",
+      gridClassName:
+        "col-span-5 row-span-2 rounded-xl border-2 border-blue-500 ",
+      descriptionClassName: " right-48 top-72 mt-10 text-center ml-22 ",
+    },
+    {
+      src: "/grid_pic3.jpg",
+      alt: "Image 2",
+      title: "Innovative Solutions",
+      description: "Solve problems with cutting-edge technology.",
 
-    titleStyle: "text-green-500 italic text-2xl",
-    gridClassName:
-      "col-span-1 row-span-2 rounded-xl border-2 border-blue-500 sm:flex sm:flex-col  ",
-    descriptionClassName: " ",
-  },
-  {
-    src: "/gridpic.jpg",
-    alt: "Image 3",
-    title: "Modern Technology",
-    description: "Stay ahead with the latest tech trends.",
+      titleStyle: "text-green-500 italic text-2xl",
+      gridClassName:
+        "col-span-1 row-span-2 rounded-xl border-2 border-blue-500 sm:flex sm:flex-col  ",
+      descriptionClassName: " ",
+    },
+    {
+      src: "/gridpic.jpg",
+      alt: "Image 3",
+      title: "Modern Technology",
+      description: "Stay ahead with the latest tech trends.",
 
-    titleStyle:
-      "text-red-500  text-lg text-center item center  top-[43rem] right-[20rem]",
-    gridClassName:
-      "col-span-3 row-span-2 rounded-xl border-2 border-blue-500 sm:flex sm:flex-col ",
-    descriptionClassName: " top-[45rem] right-[18rem] sm:right[-5rem] ",
-  },
+      titleStyle:
+        "text-red-500  text-lg text-center item center  top-[43rem] right-[20rem]",
+      gridClassName:
+        "col-span-3 row-span-2 rounded-xl border-2 border-blue-500 sm:flex sm:flex-col ",
+      descriptionClassName: " top-[45rem] right-[18rem] sm:right[-5rem] ",
+    },
 
-  {
-    src: "/grid-pic1.jpg",
-    alt: "Image 4",
-    title: "Future Trends",
-    description: "Explore what the future holds for technology.",
+    {
+      src: "/grid-pic1.jpg",
+      alt: "Image 4",
+      title: "Future Trends",
+      description: "Explore what the future holds for technology.",
 
-    titleStyle: "text-purple-500 font-mono text-3xl",
-    gridClassName:
-      "col-span-2  row-span-2 rounded-xl border-2 border-blue-500 sm:flex sm:flex-col ",
-    descriptionClassName: " ",
-  },
+      titleStyle: "text-purple-500 font-mono text-3xl",
+      gridClassName:
+        "col-span-2  row-span-2 rounded-xl border-2 border-blue-500 sm:flex sm:flex-col ",
+      descriptionClassName: " ",
+    },
 
-  {
-    src: "grid-pic5.jpg",
-    alt: "Image 4",
-    title: "Future Trends",
-    description: "Explore what the future holds for technology.",
+    {
+      src: "grid-pic5.jpg",
+      alt: "Image 4",
+      title: "Future Trends",
+      description: "Explore what the future holds for technology.",
 
-    titleStyle: "text-purple-500 font-mono text-3xl",
-    gridClassName:
-      "md:col-span-1 md:row-span-2 rounded-xl border-2 border-blue-500 sm:col-span-4 sm:row-span-4 ",
-    descriptionClassName: " ",
-  },
-];
+      titleStyle: "text-purple-500 font-mono text-3xl",
+      gridClassName:
+        "md:col-span-1 md:row-span-2 rounded-xl border-2 border-blue-500 sm:col-span-4 sm:row-span-4 ",
+      descriptionClassName: " ",
+    },
+  ];
 
   return (
     <section id="TechStak">
@@ -88,6 +87,6 @@ const gridItems = [
       </div>
     </section>
   );
-}
+};
 
-export default TechStak
+export default TechStak;

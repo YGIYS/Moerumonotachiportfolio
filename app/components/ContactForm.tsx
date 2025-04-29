@@ -1,17 +1,16 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { useTheme } from "../ThemeContext";
+import { ContactFormData } from "@/data/ContactFormTypes";
 
 const ContactForm = () => {
-
-  const {isDarkMode} = useTheme()
+  const { isDarkMode } = useTheme();
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
-
-  const onSubmit = async (data) => {
+  } = useForm<ContactFormData>();
+  const onSubmit = async (data: ContactFormData) => {
     try {
       const response = await fetch("/api/sendEmail", {
         method: "POST",
@@ -45,7 +44,7 @@ const ContactForm = () => {
             isDarkMode
               ? "from-blue-300  to-amber-500"
               : "from-amber-300 to-amber-500"
-          } bg-clip-text w-full bg-gradient-to-r text-transparent text-5xl font-bold`}
+          } bg-clip-text w-full bg-gradient-to-r text-transparent text-5xl font-bold `}
         >
           {" "}
           Reach Out!
