@@ -8,12 +8,13 @@ import Fase1 from "./aproach/Fase1";
 import Fase2 from "./aproach/Fase2";
 import Fase3 from "./aproach/Fase3";
 import Fase4 from "./aproach/Fase4";
+import "@/app/globals.css";
 
 export function CanvasRevealEffectDemo() {
   return (
     <>
-      <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-black w-full gap-4 mx-auto px-8">
-        <Card
+      <div className="py-20  flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-black w-full gap-4 mx-auto px-8">
+        <Card 
           titleheader="
             Plan and Architect the Project."
           title="

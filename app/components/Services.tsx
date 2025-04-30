@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { useTheme } from "../ThemeContext";
+import "@/app/globals.css";
 
 const services = [
   {
@@ -43,14 +44,14 @@ const Services = () => {
         isDarkMode
           ? "text-white border-blue-500"
           : "text-slate-700 border-slate-400 border-opacity-50"
-      } py-20 mt-40 mb-20 relative border-[1.7px] rounded-xl `}
+      } py-20 mt-20 mb-20 relative border-[1.7px] rounded-xl `}
     >
       <div className=" container mx-auto flex  flex-col  lg:flex-row">
         <div className=" md:w-1/4 pr-8 mb-12 md:mb-0">
           <h2
             className={`${
               isDarkMode ? "text-blue-400" : "text-slate-700"
-            } text-5xl font-extrabold sticky mr-7 top-80 mt-40`}
+            }  font-bold sticky mr-7 top-80 mt-15 `}
           >
             {" "}
             SERVICES
@@ -63,14 +64,14 @@ const Services = () => {
               <div
                 className={`${
                   isDarkMode ? "text-blue-400" : "text-slate-700"
-                } font-bold text-4xl mr-7`}
+                } font-bold  mr-7 services`}
               >
                 {service.id}
               </div>
               <div
                 className={`${
                   isDarkMode ? "text-gray-300" : "text-slate-500"
-                } font-bold text-lg mr-7 ml-3`}
+                } font-bold  mr-7 ml-3 services`}
               >
                 {service.description}
               </div>

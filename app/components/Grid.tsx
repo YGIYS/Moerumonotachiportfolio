@@ -10,9 +10,9 @@ const gridItems = [
     title: "I prioritize client collaboration, fostering open communication",
     description: "Unleash your creativity with our design tools.",
 
-    titleStyle: "text-blue-500 font-bold text-3xl right-48 top-72",
+    titleStyle: "text-blue-500 font-bold    right-48 top-72 bentogridtext",
     gridClassName: "col-span-5 row-span-2 rounded-xl border-2 border-blue-500 ",
-    descriptionClassName: " right-48 top-72 mt-10 text-center ml-22 ",
+    descriptionClassName: " right-48 top-72 mt-10 text-center text-xs ml-22 ",
   },
   {
     src: "/grid_pic3.jpg",
@@ -20,7 +20,7 @@ const gridItems = [
     title: "Innovative Solutions",
     description: "Solve problems with cutting-edge technology.",
 
-    titleStyle: "text-green-500 italic text-2xl",
+    titleStyle: "text-green-500 italic text-base font-bold",
     gridClassName:
       "col-span-1 row-span-2 rounded-xl border-2 border-blue-500 sm:flex sm:flex-col  ",
     descriptionClassName: " ",
@@ -32,7 +32,7 @@ const gridItems = [
     description: "Stay ahead with the latest tech trends.",
 
     titleStyle:
-      "text-red-500  text-lg text-center item center  top-[43rem] right-[20rem]",
+      "text-red-500 text-base font-bold  text-center item center  top-[43rem] right-[20rem]",
     gridClassName:
       "col-span-3 row-span-2 rounded-xl border-2 border-blue-500 sm:flex sm:flex-col ",
     descriptionClassName: " top-[45rem] right-[18rem] sm:right[-5rem] ",
@@ -44,7 +44,7 @@ const gridItems = [
     title: "Future Trends",
     description: "Explore what the future holds for technology.",
 
-    titleStyle: "text-purple-500 font-mono text-3xl",
+    titleStyle: "text-fuchsia-500 font-mono text-3xl text-base font-bold",
     gridClassName:
       "col-span-2  row-span-2 rounded-xl border-2 border-blue-500 sm:flex sm:flex-col ",
     descriptionClassName: " ",
@@ -56,7 +56,7 @@ const gridItems = [
     title: "Future Trends",
     description: "Explore what the future holds for technology.",
 
-    titleStyle: "text-purple-500 font-mono text-3xl",
+    titleStyle: "text-amber-400 text-base font-bold",
     gridClassName:
       "md:col-span-1 md:row-span-2 rounded-xl border-2 border-blue-500 sm:col-span-4 sm:row-span-4 ",
     descriptionClassName: " ",

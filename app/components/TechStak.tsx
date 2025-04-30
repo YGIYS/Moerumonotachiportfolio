@@ -68,7 +68,7 @@ const TechStak = () => {
 
   return (
     <section id="TechStak">
-      <div className="flex flex-col md:grid md:grid-cols-3 gap-4 rounded-xl p-4 ">
+      <div className=" md:grid md:grid-cols-3 gap-4 rounded-xl p-4 ">
         {gridItems.map((item, index) => (
           <div key={index} className={`${item.gridClassName}`}>
             <div className="relative">

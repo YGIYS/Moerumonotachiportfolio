@@ -1,5 +1,6 @@
 import React from "react";
 import { useTheme } from "@/app/ThemeContext";
+import "@/app/globals.css";
 const Fase1 = () => {
   const { isDarkMode } = useTheme();
   return (
@@ -7,7 +8,7 @@ const Fase1 = () => {
       <h1
         className={`${
           isDarkMode ? "text-white" : "text-slate-700"
-        } font-bold text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl sticky mx-auto text-center mt-14`}
+        } font-bold  sticky mx-auto text-center mt-14`}
       >
         Phase 1
       </h1>

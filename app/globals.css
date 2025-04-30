@@ -460,60 +460,60 @@
 
 @media (min-width: 350px) {
   .imag {
-    height: 250px;
-    width: 250px;
+    height: 30px;
+    width: 30px;
   }
 }
 @media (min-width: 390px) {
   .imag {
-    height: 250px;
-    width: 250px;
+    height: 30px;
+    width: 30px;
   }
 }
-@media (min-width: 400px) {
+@media (min-width: 430px) {
   .imag {
-    height: 250px;
-    width: 250px;
+   height: 30px;
+    width: 30px;
   }
 }
 
 /* For small devices (500px - 600px) */
-@media (min-width: 500px) {
+@media (min-width: 414px) {
   .imag {
-    height: 250px;
-    width: 250px;
+    height: 30px;
+    width: 30px;
   }
 }
 
 /* For small tablets (600px - 700px) */
 @media (min-width: 620px) {
   .imag {
-    height: 250px;
-    width: 250px;
+    height: 75px;
+    width: 75px;
   }
 }
 
 @media (min-width: 640px) {
   /* sm breakpoint */
   .imag {
-    height: 250px;
-    width: 250px;
+    height: 75px;
+    width: 75px;
   }
 }
 
 @media (min-width: 768px) {
   /* md breakpoint */
   .imag {
-    height: 250px;
-    width: 250px;
+    height: 100px;
+    width: 100px;
   }
 }
 
 @media (min-width: 1024px) {
   /* lg breakpoint */
   .imag {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
   }
 }
 
@@ -521,10 +521,7 @@
 @media (min-width: 350px) {
   .p {
     font-size: small;
-    font-size: smaller;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    line-height: 1px;
+    
   }
 }
 @media (min-width: 390px) {
@@ -606,6 +603,7 @@
 }
 
 /* icon */
+
 @media (min-width: 350px) {
   .foter-logo {
     gap: 30px;
@@ -655,5 +653,110 @@
   /* lg breakpoint */
   .foter-logo {
     gap: 11rem;
+  }
+}
+
+/* grid */
+@media (min-width: 350px) {
+  .services {
+    
+  }
+}
+@media (min-width: 412px) {
+  .services {
+   font-size: 15px;
+  }
+}
+@media (min-width: 430px) {
+  .services {
+    
+    font-size: 15px
+  }
+}
+
+/* For small devices (500px - 600px) */
+@media (min-width: 500px) {
+  .services {
+    font-size: 15px;
+  }
+}
+
+/* For small tablets (600px - 700px) */
+@media (min-width: 620px) {
+  .services {
+    gap: 30px;
+  }
+}
+
+@media (min-width: 640px) {
+  /* sm breakpoint */
+  .services {
+    gap: 11rem;
+  }
+}
+
+@media (min-width: 768px) {
+  /* md breakpoint */
+  .services {
+    gap: 11rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* lg breakpoint */
+  .services {
+    gap: 11rem;
+  }
+}
+
+@media (min-width: 350px) {
+  h2 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 412px) {
+  h2 {
+   font-size: 20px;
+  }
+}
+@media (min-width: 430px) {
+  h2 {
+    
+    font-size: 20px
+  }
+}
+
+/* For small devices (500px - 600px) */
+@media (min-width: 500px) {
+  h2 {
+    font-size: 20px;
+  }
+}
+
+/* For small tablets (600px - 700px) */
+@media (min-width: 620px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 640px) {
+  /* sm breakpoint */
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  /* md breakpoint */
+  h2 {
+    font-size: 1.5rem
+  }
+}
+
+@media (min-width: 1024px) {
+  /* lg breakpoint */
+  h2 {
+    font-size: 2.5rem
   }
 }
