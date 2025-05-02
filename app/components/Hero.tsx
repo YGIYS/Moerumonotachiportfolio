@@ -134,7 +134,7 @@ const Hero = () => {
 
           <p
             className={`${
-              isDarkMode ? "text-slate-500" : "text-slate-500"
+              isDarkMode ? "text-slate-500" : "text-black"
             }  z-10 -mt-4  text-sm sm:text-base text-center pt-2 pb-4  `}
           >
             <span

@@ -47,8 +47,9 @@ const ContactForm = () => {
           } bg-clip-text w-full bg-gradient-to-r text-transparent text-5xl font-bold h2`}
         >
           {" "}
-          Reach Out!
+          Send me a message!
         </h2>
+        <p className={`${isDarkMode? "text-amber-200" : "text-amber-300"} p mt-4 -mb-4`}>Got a question or proposal, or just want to say hello? Go ahead.</p>
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="mt-9 block w-full overflow-hidden"

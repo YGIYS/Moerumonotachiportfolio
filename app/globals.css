@@ -1011,45 +1011,45 @@
  @media (min-width: 350px) {
   .contact-form-placholder {
     
-    padding: 14px;
+    padding: 11px;
     border: 0.5px solid goldenrod;
     font-weight: lighter; 
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 @media (min-width: 390px) {
   .contact-form-placholder {
-      padding: 14px;
+      padding: 11px;
     border: 0.5px solid goldenrod;
     font-weight: lighter; 
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 @media (min-width: 414px) {
   .contact-form-placholder {
-    padding: 14px;
+    padding: 11px;
     border: 0.5px solid goldenrod;
     font-weight: lighter; 
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
 @media (min-width: 430px) {
   .contact-form-placholder {
     
-    padding: 14px;
+     padding: 11px;
     border: 0.5px solid goldenrod;
     font-weight: lighter; 
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 /* For small devices (500px - 600px) */
 @media (min-width: 500px) {
   .contact-form-placholder {
-     padding: 14px;
+     padding: 11px;
     border: 0.5px solid goldenrod;
     font-weight: lighter; 
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 /* For small tablets (600px - 700px) */
@@ -1064,13 +1064,19 @@
 @media (min-width: 640px) {
   /* sm breakpoint */
   .contact-form-placholder {
-    height: 1.5rem;
+   border: 0.5px solid goldenrod;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 200;
   }
 }
 @media (min-width: 768px) {
   /* md breakpoint */
   .contact-form-placholder {
-    height: 1.5rem;
+    border: 0.5px solid goldenrod;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 200;
   }
 } 
 @media (min-width: 1024px) {
