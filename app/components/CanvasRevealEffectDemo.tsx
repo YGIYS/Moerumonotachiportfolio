@@ -13,11 +13,12 @@ import "@/app/globals.css";
 export function CanvasRevealEffectDemo() {
   return (
     <>
-      <div className="py-20  flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-black w-full gap-4 mx-auto px-8">
-        <Card 
-          titleheader="
+      <div className="py-20  flex flex-col  lg:flex-row items-center justify-center gap-4  dark:bg-black mx-auto h-full w-full">
+        <div className="">
+          <Card
+            titleheader="
             Plan and Architect the Project."
-          title="
+            title="
           
           Define the purpose and main features (what problem it solves).
 
@@ -28,18 +29,20 @@ Create wireframes or mockups for the user interface (UI).
 Decide on technology stacks (e.g., React + Node.js + PostgreSQL).
 
 Good planning saves massive time later."
-          icon={<Fase1 />}
-        >
-          <CanvasRevealEffect
-            animationSpeed={5.1}
-            containerClassName="bg-emerald-900"
-          />
-        </Card>
+            icon={<Fase1 />}
+          >
+            <CanvasRevealEffect
+              animationSpeed={5.1}
+              containerClassName="bg-emerald-900"
+            />
+          </Card>
+        </div>
 
-        <Card
-          titleheader="
+        <div>
+          <Card
+            titleheader="
               Structure and Implement Code Systematically"
-          title="
+            title="
 
 Set up a modular codebase (separate concerns clearly: components, services, utilities).
 
@@ -50,24 +53,26 @@ Implement core features first (e.g., authentication, basic CRUD operations).
 Always work in small, testable steps (don't try to build everything at once).
 
 Think simple and extendable over fast and messy."
-          icon={<Fase2 />}
-        >
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-black"
-            colors={[
-              [236, 72, 153],
-              [232, 121, 249],
-            ]}
-            dotSize={2}
-          />
-          {/* Radial gradient for the cute fade */}
-          <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
-        </Card>
-        <Card
-          titleheader="
+            icon={<Fase2 />}
+          >
+            <CanvasRevealEffect
+              animationSpeed={3}
+              containerClassName="bg-black"
+              colors={[
+                [236, 72, 153],
+                [232, 121, 249],
+              ]}
+              dotSize={2}
+            />
+            {/* Radial gradient for the cute fade */}
+            <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
+          </Card>
+        </div>
+        <div>
+          <Card
+            titleheader="
              Test, Debug, and Optimize"
-          title="Regularly test functionality (unit tests, integration tests, manual testing).
+            title="Regularly test functionality (unit tests, integration tests, manual testing).
 
 Debug efficiently (console logs early, use dev tools, create error boundaries).
 
@@ -76,19 +81,20 @@ Optimize performance: loading speed, database queries, image sizes, lazy loading
 Prepare for scaling: make sure the app can grow without breaking.
 
 Launch small, polish constantly, scale wisely."
-          icon={<Fase3 />}
-        >
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-sky-600"
-            colors={[[125, 211, 252]]}
-          />
-        </Card>
-
-        <Card
-          titleheader="
+            icon={<Fase3 />}
+          >
+            <CanvasRevealEffect
+              animationSpeed={3}
+              containerClassName="bg-sky-600"
+              colors={[[125, 211, 252]]}
+            />
+          </Card>
+        </div>
+        <div>
+          <Card
+            titleheader="
             Plan and Architect the Project."
-          title="Regularly test functionality (unit tests, integration tests, manual testing).
+            title="Regularly test functionality (unit tests, integration tests, manual testing).
 
 Debug efficiently (console logs early, use dev tools, create error boundaries).
 
@@ -97,14 +103,15 @@ Optimize performance: loading speed, database queries, image sizes, lazy loading
 Prepare for scaling: make sure the app can grow without breaking.
 
 Launch small, polish constantly, scale wisely."
-          icon={<Fase4 />}
-        >
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-sky-600"
-            colors={[[125, 211, 252]]}
-          />
-        </Card>
+            icon={<Fase4 />}
+          >
+            <CanvasRevealEffect
+              animationSpeed={3}
+              containerClassName="bg-sky-600"
+              colors={[[125, 211, 252]]}
+            />
+          </Card>
+        </div>
       </div>
     </>
   );

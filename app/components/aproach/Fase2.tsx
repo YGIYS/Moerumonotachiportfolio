@@ -7,7 +7,7 @@ const Fase2 = () => {
       <h1
         className={`${
           isDarkMode ? "text-white" : "text-slate-700"
-        } font-bold text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl sticky mx-auto text-center mt-20`}
+        } font-bold  sticky mx-auto text-center mt-14`}
       >
         Phase 2
       </h1>

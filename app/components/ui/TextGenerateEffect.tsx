@@ -41,7 +41,7 @@ export const TextGenerateEffect = ({
                 idx > 4
                   ? "text-blue-800 dark:text-blue-900"
                   : "dark:text-white text-black opacity-0"
-              } text-3xl text-[-40px] `}
+              } text-2xl text-[-40px] `}
               style={{
                 filter: filter ? "blur(10px)" : "none",
               }}

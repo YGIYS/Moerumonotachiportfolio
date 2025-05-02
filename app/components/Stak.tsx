@@ -61,7 +61,7 @@ const Stak = () => {
                 alt={img.alt}
                 width={70}
                 height={10}
-                className="rounded-md items-center flex justify-center align-middle imag"
+                className="rounded-md items-center flex justify-center align-middle techstach"
               />
               <h1 className="mt-2 text-sm text-center sm:text-sm md:text-base lg:text-lg font-semibold">
                 {img.alt}

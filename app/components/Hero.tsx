@@ -8,8 +8,9 @@ import Image from "next/image";
 
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import "@/app/globals.css";
-import hero from "@/app/asset/hero.png";
+import moeru_mono from "@/app/asset/moeru_mono.jpg";
 import MobileNavBae from "./MobileNavBae";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const { isDarkMode, toggleTheme } = useTheme();
@@ -113,12 +114,12 @@ const Hero = () => {
         <div className=" max-w-[89vw] md:max-w-2xl lg:max-w-[70vw]  flex flex-col text-center  justify-center ">
           <p
             className={`${
-              isDarkMode ? "text-blue-800" : "text-blue-800"
-            } text-center -mb-8  font-mono font-medium tracking-wider`}
+              isDarkMode ? "text-blue-800" : "text-black"
+            } text-center -mb-8  font-mono font-medium tracking-wider Hero-centertext`}
           >
             Dynamic digital web magic with MoeruMonoTachi
             <span
-              className={`${isDarkMode ? "text-blue-700" : "text-blue-800"}`}
+              className={`${isDarkMode ? "text-blue-700" : "text-black"}`}
             >
               Tech
             </span>
@@ -127,7 +128,7 @@ const Hero = () => {
           <TextGenerateEffect
             className={`${
               isDarkMode ? "text-slate-100" : "text-blue-400"
-            }  z-10 Hero-centertext  text-sm text-center  mb-2`}
+            }  z-10   text-sm text-center  mb-5`}
             words="  Crafting Innovative Digital Solutions "
           />
 
@@ -152,11 +153,11 @@ const Hero = () => {
           <div className="flex justify-center items-center">
             <div
               className={`${
-                isDarkMode ? "bg-blue-500" : " bg-blue-500"
+                isDarkMode ? "bg-black" : " bg-black"
               }  rounded-full overflow-hidden w-32 imag h-32 sm:w-48 sm:h-48 md:w-64 md:h-64`}
             >
               <Image
-                src={hero}
+                src={moeru_mono}
                 height={70} // Adjusted for mobile
                 width={70} // Adjusted for mobile
                 alt="Heroimg"
