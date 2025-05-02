@@ -31,11 +31,11 @@ const ContactInfo = () => {
               isDarkMode ? "text-blue-500" : "text-amber-500"
             } flex flex-col ml-7 mb-7   sm:ml-5 md:ml-5 p`}
           >
-            <h1 className={`text-2xl font-semibold mb-[1px]`}> Phone</h1>
+            <h2 className={` font-semibold mb-[1px] h2`}> Phone</h2>
             <p
               className={`${
                 isDarkMode ? "text-white" : "text-slate-500"
-              } text-lg font tracking-wide w-10 md:tracking-tight sm:text-sm sm:w-15 sm:ml-1 p`}
+              }  font tracking-wide w-10 md:tracking-tight sm:text-sm sm:w-15 sm:ml-1 p`}
             >
               +2347064357238
             </p>
@@ -57,13 +57,13 @@ const ContactInfo = () => {
           <div
             className={`${
               isDarkMode ? "text-blue-500" : "text-amber-500"
-            } flex flex-col ml-7 mb-7 sm:ml-5 md:ml-5 p`}
+            } flex flex-col ml-7 mb-7 sm:ml-5 md:ml-5 `}
           >
-            <h1 className={`text-2xl font-semibold mb-[1px]`}> Email</h1>
+            <h2 className={`h2 font-semibold mb-[1px]`}> Email</h2>
             <p
               className={`${
                 isDarkMode ? "text-white" : "text-slate-500"
-              } lg:text-lg  lg:tracking-wide w-5 md:tracking-wide sm:tracking-tighter sm:text-sm sm:w-5 sm:ml-1 text-wrap sm:mr-4 p`}
+              }  lg:tracking-wide w-5 md:tracking-wide sm:tracking-tighter  sm:w-5 sm:ml-1 text-wrap sm:mr-4 p`}
             >
               Richmanolimini2@gmail.com
             </p>
@@ -87,14 +87,14 @@ const ContactInfo = () => {
               isDarkMode ? "text-blue-500" : "text-amber-500"
             } flex flex-col lg:ml-7 md:ml-5 ml-7 sm:ml-5 mb-7  p`}
           >
-            <h1 className={`text-2xl sm:text-xl font-semibold mb-[1px]`}>
+            <h2 className={` font-semibold mb-[1px] h2`}>
               {" "}
               Adress
-            </h1>
+            </h2>
             <p
               className={`${
                 isDarkMode ? "text-white" : "text-slate-500"
-              } text-lg text-wrap   p`}
+              }  text-wrap   p`}
             >
               7 Kontangora close garki, Abuja.
             </p>

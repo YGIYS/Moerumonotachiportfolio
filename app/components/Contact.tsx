@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <section
       id="Contact"
-      className={`pt-10 pb-14 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 w-[90%] sm:w-[80%] mx-auto items-center gap-10 mt-10 `}
+      className={`pt-10 pb-14 grid  lg:grid-cols-2 xl:grid-cols-2 w-[90%] sm:w-[80%] mx-auto items-center gap-10 mt-10 `}
     >
       <div>
         <ContactForm />

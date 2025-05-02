@@ -39,16 +39,16 @@ const ContactForm = () => {
           isDarkMode ? "bg-slate-950 " : "bg-slate-100  "
         } flex flex-col items-center rounded-xl p-7 `}
       >
-        <div
+        <h2
           className={`${
             isDarkMode
               ? "from-blue-300  to-amber-500"
               : "from-amber-300 to-amber-500"
-          } bg-clip-text w-full bg-gradient-to-r text-transparent text-5xl font-bold `}
+          } bg-clip-text w-full bg-gradient-to-r text-transparent text-5xl font-bold h2`}
         >
           {" "}
           Reach Out!
-        </div>
+        </h2>
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="mt-9 block w-full overflow-hidden"
@@ -62,7 +62,7 @@ const ContactForm = () => {
                 isDarkMode
                   ? "bg-black border-blue-500 text-white"
                   : "bg-slate-100 border-amber-500 text-slate-700"
-              } flex-2 px-7 py-3 rounded-xl border-[1.5px] border-opacity-55 outline-none w-full `}
+              } flex-2 px-7 contact-form-placholder p py-3 rounded-xl border-[1.5px] border-opacity-55 outline-none w-full `}
             />
             {errors.firstName && (
               <p className="text-red-500">{errors.firstName.message}</p>
@@ -76,14 +76,14 @@ const ContactForm = () => {
                 isDarkMode
                   ? "bg-black border-blue-500 text-white"
                   : "bg-slate-100 border-amber-500 text-slate-700"
-              } flex-2 px-7 py-3 rounded-xl border-[1.7px] border-opacity-55 outline-none w-full`}
+              } flex-2  px-7 py-3 rounded-xl border-[1.7px] border-opacity-55 outline-none w-full p contact-form-placholder`}
             />
             {errors.lastName && (
               <p className="text-red-500">{errors.lastName.message}</p>
             )}
           </div>
 
-          <div className="mt-5 flex flex-col md:flex-row items-center justify-between gap-4 md:w-full sm:w-auto">
+          <div className="mt-5 flex flex-col md:flex-row items-center justify-between gap-4 md:w-full sm:w-auto ">
             <input
               type="email"
               placeholder="Email Address"
@@ -98,7 +98,7 @@ const ContactForm = () => {
                 isDarkMode
                   ? "bg-black border-blue-500 text-white"
                   : "bg-slate-100 border-amber-500 text-slate-700"
-              } flex-1 px-7 py-3 rounded-xl border-[1.5px] border-opacity-55 outline-none w-full md:w-full sm:w-auto`}
+              } flex-2 px-7 py-3 rounded-xl border-[1.5px] border-opacity-55 outline-none w-full md:w-full sm:w-auto p contact-form-placholder`}
             />
             {errors.email && (
               <p className="text-red-500">{errors.email.message}</p>
@@ -118,7 +118,7 @@ const ContactForm = () => {
                 isDarkMode
                   ? "bg-black border-blue-500 text-white"
                   : "bg-slate-100 border-amber-500 text-slate-700"
-              } rounded-xl flex-1 px-7 py-3 border-[1.5px] border-opacity-55 outline-none w-full`}
+              } rounded-xl flex-2 px-7 py-3 border-[1.5px] border-opacity-55 outline-none w-full p contact-form-placholder `}
             />
             {errors.phone && (
               <p className="text-red-500">{errors.phone.message}</p>
@@ -131,7 +131,7 @@ const ContactForm = () => {
               isDarkMode
                 ? "bg-black-100 text-slate-100 placeholder:text-slate-100 border-blue-500"
                 : "bg-slate-100 text-slate-500 placeholder:text-slate-500 border-amber-500"
-            } w-full mt-5 rounded-xl border-[1.7px] h-11 outline-none`}
+            } w-full mt-5 flex-2  rounded-xl border-[1.7px]  outline-none  px-7 contact-form-placholder`}
           >
             <option disabled value="">
               Select an option
@@ -153,7 +153,7 @@ const ContactForm = () => {
               isDarkMode
                 ? "bg-black-100 text-slate-100 placeholder:text-slate-100 border-blue-500"
                 : "bg-slate-100 text-slate-500 placeholder:text-slate-500 border-amber-500"
-            } w-full mt-5 rounded-xl border-[1.7px] h-[10rem] outline-none placeholder:p-5`}
+            } w-full mt-5 rounded-xl border-[1.7px] h-[10rem] outline-none placeholder:p-5 p contact-form-placholder-text-area`}
           ></textarea>
           {errors.message && (
             <p className="text-red-500">{errors.message.message}</p>
@@ -166,7 +166,7 @@ const ContactForm = () => {
                 isDarkMode
                   ? "bg-gradient-to-r text-blue-950 hover:border-blue-500 hover:border-opacity-70 outline-none border-[1.5px] border-blue-700 hover:text-blue-700 hover:brightness-125 from-blue-100 to bg-blue-500 hover:bg-amber-500"
                   : "text-slate-700 bg-gradient-to-r from-amber-300 to-amber-500 hover:from-amber-400 hover:to-amber-400 hover:brightness-110 hover:text-white"
-              } px-7 py-3 bg transition-all duration-150 rounded-xl text-base font-semibold`}
+              } px-7 py-3 bg transition-all duration-150 rounded-xl text-base font-semibold p`}
             >
               Send
             </button>

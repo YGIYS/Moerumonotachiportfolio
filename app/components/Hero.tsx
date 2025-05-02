@@ -126,8 +126,8 @@ const Hero = () => {
 
           <TextGenerateEffect
             className={`${
-              isDarkMode ? "text-slate-100" : "text-black"
-            }  z-10 Hero-centertext   text-center  mb-2`}
+              isDarkMode ? "text-slate-100" : "text-blue-400"
+            }  z-10 Hero-centertext  text-sm text-center  mb-2`}
             words="  Crafting Innovative Digital Solutions "
           />
 
@@ -160,7 +160,7 @@ const Hero = () => {
                 height={70} // Adjusted for mobile
                 width={70} // Adjusted for mobile
                 alt="Heroimg"
-                className="object-contain w-full h-full " // Ensures the image covers the circle
+                className="object-contain w-full h-full imag" // Ensures the image covers the circle
               />
             </div>
           </div>

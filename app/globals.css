@@ -460,8 +460,8 @@
 
 @media (min-width: 350px) {
   .imag {
-    height: 30px;
-    width: 30px;
+    height: 175px;
+    width: 175px;
   }
 }
 @media (min-width: 390px) {
@@ -517,23 +517,8 @@
   }
 }
 
-/* p resp */
-@media (min-width: 350px) {
-  .p {
-    font-size: small;
-    
-  }
-}
-@media (min-width: 390px) {
-  .p {
-    font-size: 15px;
-    line-height: 5px;
-  }
-}
-@media (min-width: 400px) {
-  .p {
-  }
-}
+
+
 /* For small devices (500px - 600px) */
 
 /* footer section resp */
@@ -710,17 +695,17 @@
 }
 
 @media (min-width: 350px) {
-  h2 {
+  .h2 {
     font-size: 20px;
   }
 }
 @media (min-width: 412px) {
-  h2 {
+  .h2 {
    font-size: 20px;
   }
 }
 @media (min-width: 430px) {
-  h2 {
+  .h2 {
     
     font-size: 20px
   }
@@ -728,35 +713,365 @@
 
 /* For small devices (500px - 600px) */
 @media (min-width: 500px) {
-  h2 {
+  .h2 {
     font-size: 20px;
   }
 }
 
 /* For small tablets (600px - 700px) */
 @media (min-width: 620px) {
-  h2 {
+  .h2 {
     font-size: 30px;
   }
 }
 
 @media (min-width: 640px) {
   /* sm breakpoint */
-  h2 {
+  .h2 {
     font-size: 1.5rem;
   }
 }
 
 @media (min-width: 768px) {
   /* md breakpoint */
-  h2 {
+  .h2 {
     font-size: 1.5rem
   }
 }
 
 @media (min-width: 1024px) {
   /* lg breakpoint */
-  h2 {
+  .h2 {
     font-size: 2.5rem
+  }
+}
+
+/* contact form */
+@media (min-width: 350px) {
+  .h2 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 412px) {
+  .h2 {
+   font-size: 20px;
+  }
+}
+@media (min-width: 430px) {
+  .h2 {
+    
+    font-size: 20px
+  }
+}
+
+/* For small devices (500px - 600px) */
+@media (min-width: 500px) {
+  .h2 {
+    font-size: 20px;
+  }
+}
+
+/* For small tablets (600px - 700px) */
+@media (min-width: 620px) {
+  .h2 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 640px) {
+  /* sm breakpoint */
+  .h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  /* md breakpoint */
+  .h2 {
+    font-size: 1rem
+  }
+}
+
+@media (min-width: 1024px) {
+  /* lg breakpoint */
+  .h2 {
+    font-size: 1rem
+  }
+}
+
+
+/* p */
+@media (min-width: 350px) {
+  .p {
+    font-size: 13px;
+  }
+}
+@media (min-width: 414px) {
+  .p {
+   font-size: 15px;
+  }
+}
+@media (min-width: 430px) {
+  .p {
+    
+    font-size: 20px
+  }
+}
+/* For small devices (500px - 600px) */
+@media (min-width: 500px) {
+  .p {
+    font-size: 20px;
+  }
+}
+/* For small tablets (600px - 700px) */
+@media (min-width: 620px) {
+  .p {
+    font-size: 30px;
+  }
+} 
+@media (min-width: 640px) {
+  /* sm breakpoint */
+  .p {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  /* md breakpoint */
+  .p {
+    font-size: 1.5rem
+  }
+} 
+@media (min-width: 1024px) {
+  /* lg breakpoint */
+  .p {
+    font-size: 1rem
+  }
+} 
+
+
+
+/* contact form */
+ @media (min-width: 350px) {
+  .contact-form-placholder {
+    
+    padding: 14px;
+    border: 0.5px solid goldenrod;
+    font-weight: lighter; 
+    font-size: 14px;
+  }
+}
+@media (min-width: 390px) {
+  .contact-form-placholder {
+      padding: 14px;
+    border: 0.5px solid goldenrod;
+    font-weight: lighter; 
+    font-size: 14px;
+  }
+}
+@media (min-width: 414px) {
+  .contact-form-placholder {
+    padding: 14px;
+    border: 0.5px solid goldenrod;
+    font-weight: lighter; 
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 430px) {
+  .contact-form-placholder {
+    
+    padding: 14px;
+    border: 0.5px solid goldenrod;
+    font-weight: lighter; 
+    font-size: 14px;
+  }
+}
+/* For small devices (500px - 600px) */
+@media (min-width: 500px) {
+  .contact-form-placholder {
+     padding: 14px;
+    border: 0.5px solid goldenrod;
+    font-weight: lighter; 
+    font-size: 14px;
+  }
+}
+/* For small tablets (600px - 700px) */
+@media (min-width: 620px) {
+  .contact-form-placholder {
+     padding: 14px;
+    border: 0.5px solid goldenrod;
+    font-weight: lighter; 
+    font-size: 14px;
+  }
+} 
+@media (min-width: 640px) {
+  /* sm breakpoint */
+  .contact-form-placholder {
+    height: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  /* md breakpoint */
+  .contact-form-placholder {
+    height: 1.5rem;
+  }
+} 
+@media (min-width: 1024px) {
+  /* lg breakpoint */
+  .contact-form-placholder {
+    border: 0.5px solid goldenrod;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 200;
+
+  }
+}
+
+
+@media  (min-width: 350px) {
+  .contact-form-placholder-text-area {
+    height: 7rem;
+    padding: 1px;
+    font-size: 14px;
+    font-weight: lighter;
+    border: 0.5px solid goldenrod;
+    
+  }
+}
+@media (min-width: 390px) {
+  .contact-form-placholder {
+     height: 1.5rem;
+    padding: 14px;
+    font-size: 13px;
+    font-weight: lighter;
+  }
+}
+@media (min-width: 414px) {
+  .contact-form-placholder {
+    height: 1.5rem;
+    padding: 14px;
+    font-size: 13px;
+    font-weight: lighter;
+  }
+}
+
+@media (min-width: 430px) {
+  .contact-form-placholder {
+    
+      height: 1.5rem;
+    padding: 14px;
+    font-size: 13px;
+  }
+}
+/* For small devices (500px - 600px) */
+@media (min-width: 500px) {
+  .contact-form-placholder {
+     height: 1.5rem;
+    padding: 10px;
+    font-size: 10px;
+  }
+}
+/* For small tablets (600px - 700px) */
+@media (min-width: 620px) {
+  .contact-form-placholder {
+    height: 1rem;
+  }
+} 
+@media (min-width: 640px) {
+  /* sm breakpoint */
+  .contact-form-placholder {
+    height: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  /* md breakpoint */
+  .contact-form-placholder {
+    height: 1.5rem;
+  }
+} 
+@media (min-width: 1024px) {
+  /* lg breakpoint */
+  .contact-form-placholder {
+    height: 2rem;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 200;
+
+  }
+}
+
+ @media (min-width: 350px) {
+  .contact-form-placholder {
+    
+    padding: 14px;
+    border: 0.5px solid goldenrod;
+    font-weight: lighter; 
+    font-size: 14px;
+  }
+}
+@media (min-width: 390px) {
+  .contact-form-placholder {
+      padding: 14px;
+    border: 0.5px solid goldenrod;
+    font-weight: lighter; 
+    font-size: 14px;
+  }
+}
+@media (min-width: 414px) {
+  .contact-form-placholder {
+    padding: 14px;
+    border: 0.5px solid goldenrod;
+    font-weight: lighter; 
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 430px) {
+  .contact-form-placholder {
+    
+    padding: 14px;
+    border: 0.5px solid goldenrod;
+    font-weight: lighter; 
+    font-size: 14px;
+  }
+}
+/* For small devices (500px - 600px) */
+@media (min-width: 500px) {
+  .contact-form-placholder {
+     padding: 14px;
+    border: 0.5px solid goldenrod;
+    font-weight: lighter; 
+    font-size: 14px;
+  }
+}
+/* For small tablets (600px - 700px) */
+@media (min-width: 620px) {
+  .contact-form-placholder {
+     padding: 14px;
+    border: 0.5px solid goldenrod;
+    font-weight: lighter; 
+    font-size: 14px;
+  }
+} 
+@media (min-width: 640px) {
+  /* sm breakpoint */
+  .contact-form-placholder {
+    height: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  /* md breakpoint */
+  .contact-form-placholder {
+    height: 1.5rem;
+  }
+} 
+@media (min-width: 1024px) {
+  /* lg breakpoint */
+  .contact-form-placholder {
+    border: 0.5px solid goldenrod;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 200;
+
   }
 }
