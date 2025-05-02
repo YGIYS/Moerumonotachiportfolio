@@ -49,7 +49,7 @@ const ContactForm = () => {
           {" "}
           Send me a message!
         </h2>
-        <p className={`${isDarkMode? "text-amber-200" : "text-amber-300"} p mt-4 -mb-4`}>Got a question or proposal, or just want to say hello? Go ahead.</p>
+        <p className={`${isDarkMode? "text-amber-200" : "text-amber-300"} p mt-4 -mb-4 text-left j`}>Got a question or proposal, or just want to say hello? Go ahead.</p>
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="mt-9 block w-full overflow-hidden"

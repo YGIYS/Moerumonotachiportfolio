@@ -112,41 +112,21 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className=" max-w-[89vw] md:max-w-2xl lg:max-w-[70vw]  flex flex-col text-center  justify-center ">
-          <p
-            className={`${
-              isDarkMode ? "text-blue-800" : "text-black"
-            } text-center -mb-8  font-mono font-medium tracking-wider Hero-centertext`}
-          >
-            Dynamic digital web magic with MoeruMonoTachi
-            <span
-              className={`${isDarkMode ? "text-blue-700" : "text-black"}`}
-            >
-              Tech
-            </span>
-          </p>
-
           <TextGenerateEffect
             className={`${
               isDarkMode ? "text-slate-100" : "text-blue-400"
-            }  z-10   text-sm text-center  mb-5`}
+            }  z-10  h2 text-3xl text-center  mt-5`}
             words="  Crafting Innovative Digital Solutions "
           />
 
           <p
             className={`${
-              isDarkMode ? "text-slate-500" : "text-black"
-            }  z-10 -mt-4  text-sm sm:text-base text-center pt-2 pb-4  `}
+              isDarkMode ? "text-blue-800" : "text-black"
+            } text-center mb-8  font-mono font-medium tracking-wider Hero-centertext`}
           >
-            <span
-              className={`${isDarkMode ? "text-blue-800" : "text-blue-900"}`}
-            >
-              Hi
-            </span>{" "}
-            I'm Richman, a software developer based in{" "}
-            <span
-              className={`${isDarkMode ? "text-blue-900" : "text-blue-900"}`}
-            >
-              Nigeria.
+            Dynamic digital web magic with MoeruMonoTachi
+            <span className={`${isDarkMode ? "text-blue-700" : "text-black"}`}>
+              Tech
             </span>
           </p>
 
@@ -154,17 +134,35 @@ const Hero = () => {
             <div
               className={`${
                 isDarkMode ? "bg-black" : " bg-black"
-              }  rounded-full overflow-hidden w-32 imag h-32 sm:w-48 sm:h-48 md:w-64 md:h-64`}
+              }  rounded-full overflow-hidden w-32 imag h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 mt-7`}
             >
               <Image
                 src={moeru_mono}
                 height={70} // Adjusted for mobile
                 width={70} // Adjusted for mobile
                 alt="Heroimg"
-                className="object-contain w-full h-full imag" // Ensures the image covers the circle
+                className="object-contain w-full h-full imag " // Ensures the image covers the circle
               />
             </div>
           </div>
+
+          <p
+            className={`${
+              isDarkMode ? "text-slate-500" : "text-black"
+            }  z-10 mt-5 font-mono  p sm:text-base text-center pt-2 pb-4  `}
+          >
+            <span
+              className={`${isDarkMode ? "text-blue-400" : "text-blue-400"}`}
+            >
+              Hi
+            </span>{" "}
+            I'm Richman, a software developer based in{" "}
+            <span
+              className={`${isDarkMode ? "text-blue-400" : "text-blue-500"}`}
+            >
+              Nigeria.
+            </span>
+          </p>
           {/* button */}
           <button className=" text-nowrap inline-flex h-12 animate-shimmer items-center justify-center rounded-xl border w-40 mx-auto mt-5  border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-5 font-medium text-blue-500 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
             Projs preview 📁
